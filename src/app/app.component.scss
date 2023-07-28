@@ -17,7 +17,7 @@ nav
 
 .nav-element-selected
 {
-  color: violet;
+  color: orange;
 }
 
 .form
@@ -25,4 +25,15 @@ nav
   display: flex;
   justify-content: center;
   margin: 30px 20px
+}
+
+input
+{
+  border-color: orange;
+}
+
+button
+{
+  border-color: orange;
+  background-color: rgb(243, 197, 112);
 }

@@ -9,6 +9,11 @@
       "id": 2,
       "title": "Task Completato",
       "completed": true
+    },
+    {
+      "id": 3,
+      "title": "Task aggiunto",
+      "completed": false
     }
   ]
 }

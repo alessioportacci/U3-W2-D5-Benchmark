@@ -10,11 +10,18 @@ img
 p
 {
   text-align: center;
+  background-color: white;
 }
 
 ul
 {
   list-style-type: none;
+  background-color: white;
+}
+
+li:hover
+{
+  scale:1.15
 }
 
 span
