@@ -1,19 +1,14 @@
 {
   "data": [
     {
-      "id": 0,
-      "title": "Sono un task",
-      "completed": false
-    },
-    {
       "id": 1,
-      "title": "modificato",
-      "completed": true
+      "title": "Task non completato",
+      "completed": false
     },
     {
       "id": 2,
-      "title": "ciao2",
-      "completed": false
+      "title": "Task Completato",
+      "completed": true
     }
   ]
 }

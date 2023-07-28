@@ -18,6 +18,14 @@
         >
           🗑️
         </a>
+        <!-- Modifica Task -->
+        <a
+          title="Modifica Task"
+          (click)="srvTodo.putTask(task.id, task.title, false)"
+          href="/completed"
+        >
+          🖋️
+        </a>
         <!-- Completa Task -->
         <a
           title="Task ancora da finire"
@@ -26,7 +34,7 @@
         >
           ❎
         </a>
-        <span> {{ task.id }} - {{ task.title }}</span>
+        <input class="test" type="text" [(ngModel)]="task.title" />
       </li>
       <hr *ngIf="task.completed" />
     </div>

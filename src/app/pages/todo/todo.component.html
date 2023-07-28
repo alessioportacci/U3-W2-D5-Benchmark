@@ -14,6 +14,14 @@
         <a title="Elimina Task" (click)="srvTodo.deleteTask(task.id)" href="/">
           🗑️
         </a>
+        <!-- Modifica Task -->
+        <a
+          title="Modifica Task"
+          (click)="srvTodo.putTask(task.id, task.title, task.completed)"
+          href="/"
+        >
+          🖋️
+        </a>
         <!-- Completa Task -->
         <a
           title="Completa Task"
@@ -22,7 +30,7 @@
         >
           ✅
         </a>
-        <span> {{ task.id }} - {{ task.title }}</span>
+        <input class="test" type="text" [(ngModel)]="task.title" />
       </li>
       <hr *ngIf="!task.completed" />
     </div>
