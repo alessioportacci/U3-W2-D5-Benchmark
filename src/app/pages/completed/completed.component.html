@@ -1,0 +1,34 @@
+<!-- Caricamento -->
+<div class="caricamento" *ngIf="!(taskList | async)">
+  <img
+    src="https://i.gifer.com/origin/f5/f5baef4b6b6677020ab8d091ef78a3bc_w200.webp"
+  />
+  <p>Caricamento dei task completati in corso...</p>
+</div>
+<!-- Task da fare -->
+<div class="tasks">
+  <ul>
+    <div *ngFor="let task of taskList | async">
+      <li *ngIf="task.completed">
+        <!-- Elimina Task -->
+        <a
+          title="Elimina Task"
+          (click)="srvTodo.deleteTask(task.id)"
+          href="/completed"
+        >
+          🗑️
+        </a>
+        <!-- Completa Task -->
+        <a
+          title="Task ancora da finire"
+          (click)="srvTodo.putTask(task.id, task.title, false)"
+          href="/completed"
+        >
+          ❎
+        </a>
+        <span> {{ task.id }} - {{ task.title }}</span>
+      </li>
+      <hr *ngIf="task.completed" />
+    </div>
+  </ul>
+</div>

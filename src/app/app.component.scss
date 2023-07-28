@@ -1,0 +1,28 @@
+nav
+{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid lightgray;
+  position: sticky;
+  top:0;
+  background-color: white;
+}
+
+.nav-element
+{
+  margin:5px 30px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-element-selected
+{
+  color: violet;
+}
+
+.form
+{
+  display: flex;
+  justify-content: center;
+  margin: 30px 20px
+}
