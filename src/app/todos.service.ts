@@ -42,7 +42,6 @@ export class TodosService
         })
       .then(json =>
         {
-          console.log(json)
           this.isLoaded = true
           return json
         })
@@ -58,7 +57,6 @@ export class TodosService
         })
       .then(json =>
         {
-          console.log(json)
           return json
         })
   }
@@ -67,7 +65,6 @@ export class TodosService
   async postTask(text:string):Promise<void>
   {
     let task:TodoClass = new TodoClass(0, text)
-    console.log(JSON.stringify(task))
     await fetch(this.url,
           {
             method: "POST",
